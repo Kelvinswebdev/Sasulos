@@ -483,6 +483,12 @@
     /* margin-top: 100px; */
 }
 
+  @media screen and (max-width:992px){
+    .cards{
+          padding:0px;
+    }
+  }
+
 .cardstext{
     margin-top: 100px;
 }
@@ -502,7 +508,6 @@
   @media screen and (max-width:992px){
     .cards-content{
   flex-direction: column;
-  
     }
   }
   
