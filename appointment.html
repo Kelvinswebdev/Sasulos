@@ -107,16 +107,17 @@
 
 
 
+
+
     <div class="formbold-main-wrapper">
-        <!-- Author: FormBold Team -->
-        <!-- Learn More: https://formbold.com -->
         <div class="formbold-form-wrapper">
-          <form action="" method="POST">
+          <form action="" method="POST" name="submit-to-google-sheet">
             <div class="formbold-mb-5">
               <label for="name" class="formbold-form-label"> Full Name </label>
               <input
+                required
                 type="text"
-                name="name"
+                name="fullname"
                 id="name"
                 placeholder="Full Name"
                 class="formbold-form-input"
@@ -125,6 +126,7 @@
             <div class="formbold-mb-5">
               <label for="phone" class="formbold-form-label"> Phone Number </label>
               <input
+                required
                 type="text"
                 name="phone"
                 id="phone"
@@ -135,6 +137,7 @@
             <div class="formbold-mb-5">
               <label for="email" class="formbold-form-label"> Email Address </label>
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -147,20 +150,10 @@
                 <div class="formbold-mb-5 w-full">
                   <label for="date" class="formbold-form-label"> Date </label>
                   <input
+                    required
                     type="date"
                     name="date"
                     id="date"
-                    class="formbold-form-input"
-                  />
-                </div>
-              </div>
-              <div class="w-full sm:w-half formbold-px-3">
-                <div class="formbold-mb-5">
-                  <label for="time" class="formbold-form-label"> Time </label>
-                  <input
-                    type="time"
-                    name="time"
-                    id="time"
                     class="formbold-form-input"
                   />
                 </div>
@@ -175,6 +168,7 @@
                 <div class="w-full sm:w-half formbold-px-3">
                   <div class="formbold-mb-5">
                     <input
+                      required
                       type="text"
                       name="area"
                       id="area"
@@ -186,6 +180,7 @@
                 <div class="w-full sm:w-half formbold-px-3">
                   <div class="formbold-mb-5">
                     <input
+                      required
                       type="text"
                       name="city"
                       id="city"
@@ -197,6 +192,7 @@
                 <div class="w-full sm:w-half formbold-px-3">
                   <div class="formbold-mb-5">
                     <input
+                      required
                       type="text"
                       name="state"
                       id="state"
@@ -208,6 +204,7 @@
                 <div class="w-full sm:w-half formbold-px-3">
                   <div class="formbold-mb-5">
                     <input
+                      required
                       type="text"
                       name="post-code"
                       id="post-code"
@@ -216,12 +213,68 @@
                     />
                   </div>
                 </div>
+
+                
+    
               </div>
+
+              <label class="formbold-form-label formbold-form-label-2">
+                Enquiry
+              </label>
+              <div class="formbold-mb-5">
+                <textarea
+                    required
+                    name="comments"
+                    id="comments"
+                    placeholder="Travel enquiry or recruitment enquiry"
+                    class="formbold-form-input full-width-textarea"
+                ></textarea>
             </div>
-      
+            </div>
             <div>
-              <button class="formbold-btn">Book Appointment</button>
+              <button type="submit" class="formbold-btn">Book Appointment</button>
+            </div>
+            <div class="formbold-mb-5">
+
+              <div id="success-message" class="formbold-success-message hidden">
+                <span class="formbold-success-icon fas fa-check-circle"></span>
+                <span class="formbold-success-text">Your appointment has been booked successfully!</span>
+              </div>
             </div>
           </form>
         </div>
-      </div>
+    </div>
+
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbymInAwh_F-3RtWW2iszLqwO9Qpj514JKHzhFOeEJhYUdNrYckNgGh2NnwXeHqVmuvu/exec";
+      const form = document.forms['submit-to-google-sheet'];
+      const successMessage = document.getElementById('success-message');
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent default form submission
+    
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            if (response.ok) {
+              successMessage.classList.add('visible'); // Show success message with animation
+              form.reset(); // Reset form fields
+              setTimeout(() => {
+                successMessage.classList.remove('visible'); // Hide success message after a delay
+              }, 3000); // Hide after 3 seconds (adjust as needed)
+            } else {
+              console.error('Error!', response.statusText);
+              // Handle errors gracefully, e.g., display an error message to the user
+            }
+          })
+          .catch((error) => {
+            console.error('Error!', error.message);
+            // Handle errors gracefully, e.g., display an error message to the user
+          });
+      });
+    </script>
+    
+
+
+</body>
+</html>
