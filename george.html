@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="george.css">
+    <link rel="icon" href="pics/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+    <div class="nav-conainer">
+        <div class="nav-content">
+            <!-- the first navbar starts here -->
+            <div class="firstnav">
+                <div class="firstnavcontent">
+                    <ul>
+                        <li><img src="pics/email.webp" width="20" alt="">Welcome to Sasulos travel and manpower recruitment agency.                   </li>
+                    </ul>
+                    <ul>
+                        <li>Sasulostravel@gmail.com</li>
+                        <li>(+233) 53 784 5131</li>
+                    </ul>
+                </div>
+            </div> 
+         <!-- the first navbar ends here -->
+         <!-- the second navigation bar begins -->
+
+            <div class="Secondnav">
+                <div class="secondnavcontent">
+                    <div><img src="pics/Sasulos.png" width="300" alt=""></div>
+                    <ul class="mainlist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="ceo.html">Message from CEO</a></li>
+                        <li><a href="">Our Services</a>
+                            <div class="drop-container">
+                                <div class="dropdowne">
+                                  <ul>
+                                    <li><a href="recruitment.html">Recruitment Consultancy</a></li>
+                                    <li><a href="securityservices.html">Security Services</a></li>
+                                    <li><a href="hotelmanagement.html">Hotel management & hospitality</a></li>
+                                    <li><a href="flights.html">Student Visa</a></li>
+                                    <li><a href="contract.html">Contracting</a></li>
+                                    <li><a href="tour.html">Tour Trips</a></li>
+                                    <li><a href="hotel.html">Hotel Bookings</a></li>
+                                  </ul>
+                              </div>
+                              </div>
+                        </li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <div><button><a href="appointment.html">Book Now</a></button></div>
+                    </ul>
+                </div>
+                
+            </div>
+         <!-- the Secondnavbar ends here -->
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navboost">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="pics/Sasulos.png" width="300" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ceo.html">Message from ceo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="recruitment.html">Recruitment Consultancy</a></li>
+                <li><a class="dropdown-item" href="securityservices.html">Security Services</a></li>
+                <li><a class="dropdown-item" href="hotelmanagement.html">Hotel Management and Hospitality</a></li>
+                <li><a class="dropdown-item" href="flights.html">Student Visa</a></li>
+                <li><a class="dropdown-item" href="tour.html">Tour trips</a></li>
+                <li><a class="dropdown-item" href="contract.html">Contracting</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="appointment.html">Book Appointment</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    
+    <section class="portfolio">
+        <!--  *****  Buttons Section Starts  *****  -->
+        <div class="button-group">
+            <button class="button active" data-filter="*">All</button>
+            <button class="button" data-filter=".renovate">Travel</button>
+        <button class="button" data-filter=".building">Recruitment</button>
+            <button class="button" data-filter=".architectture">Tour</button>
+        </div>
+        <!--  *****  Buttons Section Ends  *****  -->
+
+        <!--  *****  Gallery Section Starts  *****  -->
+        <div class="gallery">
+            
+            <!--  *****  Card 1 Starts  *****  -->
+            <div class="item renovate">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.45.05 AM.jpeg" class="image">
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup1">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup1" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                    <img src="pics/WhatsApp Image 2024-03-28 at 9.47.05 AM.jpeg" class="image">
+                        
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 1 Ends  *****  -->
+
+            <!--  *****  Card 2 Starts  *****  -->
+            <div class="item building">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.47.06 AM.jpeg" class="image">
+                    
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup2">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup2" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                        <img src="pics/IMG-20240328-WA0007.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 2 Ends  *****  -->
+
+            <!--  *****  Card 3 Starts  *****  -->
+            <div class="item building">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.47.05 AM.jpeg" class="image">
+
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup3">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup3" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.45.05 AM.jpeg" class="image">
+                    
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 3 Ends  *****  -->
+
+            <!--  *****  Card 4 Starts  *****  -->
+            <div class="item architectture">
+                <img src="pics/IMG-20240328-WA0008.jpg" class="image">
+                
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup4">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup4" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                <img src="pics/IMG-20240328-WA0009.jpg" class="image">
+                    
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 4 Ends  *****  -->
+
+            <!--  *****  Card 5 Starts  *****  -->
+            <div class="item renovate">
+                <img src="pics/IMG-20240328-WA0012.jpg" class="image">
+                
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup5">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup5" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                    <img src="pics/IMG-20240328-WA0013.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 5 Ends  *****  -->
+
+            <!--  *****  Card 6 Starts  *****  -->
+            <div class="item architectture">
+                <img src="./profile-14.jpg" class="image">
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup6">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup6" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                    <img src="pics/WhatsApp Image 2024-03-28 at 9.45.05 AM.jpeg">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 6 Ends  *****  -->
+
+            <!--  *****  Card 7 Starts  *****  -->
+            <div class="item architectture">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.45.05 AM.jpeg" class="image">
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup7">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup7" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                    <img src="pics/WhatsApp Image 2024-03-28 at 9.45.05 AM.jpeg">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 7 Ends  *****  -->
+
+            <!--  *****  Card 8 Starts  *****  -->
+            <div class="item building">
+                <img src="./profile-14.jpg" class="image">
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup8">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup8" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                    <img src="./profile-14.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 8 Ends  *****  -->
+
+            <!--  *****  Card 9 Starts  *****  -->
+            <div class="item architectture">
+                <img src="pics/WhatsApp Image 2024-03-28 at 9.47.05 AM.jpeg" class="image">
+                <div class="text">
+                    <p class="intro">renovate, construction</p>
+                    <p class="btn open-popup" data-popup-id="popup9">
+                        <span class="material-symbols-outlined">travel_explore</span>
+                    </p>
+                </div>
+                <div id="popup9" class="popup">
+                    <span class="Close">&times;</span>
+                    <div class="popup-content">
+                        <img src="pics/WhatsApp Image 2024-03-28 at 9.47.06 AM.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  *****  Card 9 Ends  *****  -->
+
+        </div>
+        <!--  *****  Gallery Section Ends  *****  -->
+
+        <div class="stage5">
+            <div class="stage5-content">
+            <div class="stage5con">
+             <ul>
+              <h1>Sasulos</h1>
+              <li><a href="about.html">About Sasulos Travels</a></li>
+              <li><a href="about.html">Our Vision and Aspirations</a></li>
+              <li><a href="about.html">Our Values</a></li>
+        
+            </ul>
+        
+              <ul>
+                <h1>Unique services</h1>
+                <li><a href="sof.html">Contracting</a></li>
+                <li><a href="cyber.html">Flight Ticketing</a></li>
+                <li><a href="data.html">Recruitment Consultancy</a></li>
+              </ul>
+        
+              <ul>
+                <h1>News</h1>
+                <li><a href="about.html">15 best places to visit in Ghana            </a></li>
+                <li><a href="learn.html">Travel requirements in Ghana </a></li>
+                <li><a href="cloud.html">Updated covid-19 travel requirements            </a></li>
+        
+              </ul>
+        
+              <ul class="social">
+                <h1>Find Out More</h1>
+                <input type="text">
+                <button>signup</button>
+        
+                <ul>
+                  <li><a href=""><img src="pics/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="pics/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="pics/linked.png" alt=""></a></li>
+                <li><a href=""><img src="pics/face.png" alt=""></a></li>
+                <li><a href=""><img src="pics/youtube.png" alt=""></a></li>
+                </ul>
+                
+              </ul>
+        
+        
+        
+              <ul class="street">
+                <h1>Street Address</h1>
+                <li>Gbawe-Accra.</li>
+                <li>No 2 first atoom Kojo str</li>
+                <div style="margin: 20px 0px;"><img src="pics/sasulos1.png" width="200" alt=""> </div>
+    
+              </ul>
+        
+              <ul class="street">
+                <h1>Postal Address</h1>
+                <li>P.O. BOX 5100</li>
+                <li>Accra-North.</li>
+              </ul>
+        
+              <ul class="street">
+                <h1>Phone & Email</h1>
+                <li>(+233) 53 784 5131</li>
+                <li>Sasulostravel@gmail.com</a></li>
+              </ul>
+        
+              <ul class="social">
+                <h1>Comming Soon</h1>
+                <li>+Sasulos Eatery</li>
+                <li>+Sasulos Towers</li>
+                <li>+Sasulos Car Rentals</li>
+            </ul>
+              </div>
+              
+            
+    
+    
+            <div style="border-top:1px solid rgb(255, 255, 255);" >
+              <p style="text-align: center;padding: 20px;">Copyright ©2024 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+<script src="js/work.js"></script> 
+
+</section>
+
+ <!--   *****   JQuery Link   *****   -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <!--   *****   Isotope Filter Link   *****  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+ <script type="text/javascript">
+	var $galleryContainer = $('.gallery').isotope({
+		itemSelector: '.item',
+  		layoutMode: 'fitRows'
+	})
+
+	$('.button-group .button').on('click', function(){
+		$('.button-group .button').removeClass('active');
+		$(this).addClass('active');
+
+		var value = $(this).attr('data-filter');
+		$galleryContainer.isotope({
+			filter: value 
+		})
+	})
+
+    $(document).ready(function(){
+  $(".open-popup").click(function(){
+    var popupId = $(this).data("popup-id");
+    $("#" + popupId).fadeIn();
+  });
+  
+  $(".Close").click(function(){
+    $(this).closest(".popup").fadeOut();
+  });
+});
+
+</script>
+</body>
+</html>
