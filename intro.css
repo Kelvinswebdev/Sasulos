@@ -184,7 +184,26 @@
 /* the styling for the Secondnavbar ends here */
 /* the thirdnavbar begins */
 
+.sasulos{
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px;
+}
 
+.sasulos img{
+  width: 300px;
+}
+
+.logobox{
+  height: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border: 3px solid rgb(0, 128, 248);
+  padding: 15px;
+}
 
 
 
