@@ -184,27 +184,12 @@
 /* the styling for the Secondnavbar ends here */
 /* the thirdnavbar begins */
 
-.sasulos{
-  display: flex;
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 100px 0px;
+
+.fheading{
+  height: 500px;
+  width: 100%;
+  background-image: url("pics/1.jpg");
 }
-
-.sasulos img{
-    border-bottom: 6px solid dodgerblue;
-    padding-bottom: 20px;
-}
-
-.card1
-
-.card1{
-  height: 300px;
-  height: 300px;
-
-}
-
 
 
 
