@@ -188,13 +188,14 @@
 .fheading{
   height: 500px;
   width: 100%;
-  background-image: url("pics/");
+  background-image:linear-gradient(to left, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("pics/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .fcards{
@@ -202,11 +203,12 @@
   gap: 30px;
   justify-content: center;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   padding: 0px 50px;
 }
 
 .carde{
+  border-radius: 10px;
   width: 400px;
   background-color: white;
   box-shadow: 0px 7px 30px -20px;
@@ -262,6 +264,12 @@
   height: 200px;
   border-radius: 50%;
 
+}
+
+.socialicons{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 
