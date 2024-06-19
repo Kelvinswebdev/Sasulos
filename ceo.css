@@ -185,7 +185,7 @@ background-color:rgb(0, 22, 75);
 /* the thirdnavbar begins */
 
 .header-image{
-    background-image:linear-gradient(to left, rgba(0,0,0,0.3),rgba(0,0,0,1)), url("pics/iceland.jpg");
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0)), url("pics/madam.jpeg");
     height: 500px;
     background-size: cover;
     background-attachment: fixed;
