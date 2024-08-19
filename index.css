@@ -435,12 +435,17 @@
 
 /* the styling for the client section begins here */
 
-
+.clientcontainer{
+  text-align: center;
+  margin-top: 100px;
+}
 .clients{
   text-align: center;
   display:grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
 
 }
 
