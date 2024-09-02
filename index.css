@@ -194,11 +194,22 @@
     /* margin: auto; */
 }
 
-.whyText{
-    text-align: center;
-    margin-top: 100px;
-    padding: 0px 30px;
+
+.whyText h1{
+  text-align: center;
+  margin-top: 100px;
+  padding: 0px 30px;
+  color: rgb(20, 72, 185);
 }
+.whyText p{
+  text-align: center;
+  font-size: 13px;
+  padding: 0px 30px;
+
+  color: rgb(163, 163, 163);
+}
+
+
 
 
 @media(max-width:800px){
