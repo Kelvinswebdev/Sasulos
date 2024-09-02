@@ -33,7 +33,11 @@
 
             <div class="Secondnav">
                 <div class="secondnavcontent">
-                    <div><img src="pics/logos.png" width="300" alt=""></div>
+                    <div>
+                      <a href="index.html">
+                        <img src="pics/logos.png" width="300" alt="">
+                      </a>
+                    </div>
                     <ul class="mainlist">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us</a>
@@ -163,27 +167,27 @@
     <!-- the slider ends here -->
 
 
-        <div class="whyChooseUs">
+    <div class="whyChooseUs">
         <div class="whyChooseUsContent">
-            <!-- <div class="whyText">
-                <h1>Why Choose Sasulos Travels    </h1>
+            <div class="whyText">
+                <h1>Why Choose Sasulos Travels & Manpower Recruitment Agency    </h1>
                 <p>We offer the most competitive rates and offers for wonderful and beautiful places.                </p>
-            </div> -->
+            </div>
             <div class="whyCards">
                 <div class="whyCards-1">
-                    <div class="whycard-1image"><img src="pics/clean.jpg" width="300" alt=""></div>
+                    <div class="whycard-1image"><img src="pics/prev.jpg" width="300" alt=""></div>
                     <h1>Pre-vetted and experienced workforce</h1>
                     <p>Booking is quick as clicking a few clicks. We take care of all transportation and accommodations during your journey.                    </p>
                 </div>
     
                 <div class="whyCards-1">
-                    <div class="whycard-1image"><img src="pics/clean.jpg" width="300" alt=""></div>
+                    <div class="whycard-1image"><img src="pics/streanlined.jpg" width="300" alt=""></div>
                     <h1>Streamlined Process</h1>
                     <p>We handle the entire recruitment and onboarding process, saving you time and resources</p>
                 </div>
     
                 <div class="whyCards-1">
-                    <div class="whycard-1image"><img src="pics/clean.jpg" width="300" alt=""></div>
+                    <div class="whycard-1image"><img src="pics/prevetted.jpg" width="300" alt=""></div>
                     <h1>Unique Destinations                  </h1>
                     <p>Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.                    </p>
                 </div>
@@ -192,6 +196,35 @@
 
         
     </div>
+    <div class="whyChooseUs">
+      <div class="whyChooseUsContent">
+          <!-- <div class="whyText">
+              <h1>Why Choose Sasulos Travels & Manpower Recruitment Agency    </h1>
+              <p>We offer the most competitive rates and offers for wonderful and beautiful places.                </p>
+          </div> -->
+          <!-- <div class="whyCards">
+              <div class="whyCards-1">
+                  <div class="whycard-1image"><img src="pics/prev.jpg" width="300" alt=""></div>
+                  <h1>Pre-vetted and experienced workforce</h1>
+                  <p>Booking is quick as clicking a few clicks. We take care of all transportation and accommodations during your journey.                    </p>
+              </div>
+  
+              <div class="whyCards-1">
+                  <div class="whycard-1image"><img src="pics/streanlined.jpg" width="300" alt=""></div>
+                  <h1>Streamlined Process</h1>
+                  <p>We handle the entire recruitment and onboarding process, saving you time and resources</p>
+              </div>
+  
+              <div class="whyCards-1">
+                  <div class="whycard-1image"><img src="pics/prevetted.jpg" width="300" alt=""></div>
+                  <h1>Unique Destinations                  </h1>
+                  <p>Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.                    </p>
+              </div>
+          </div> -->
+      </div>
+
+      
+  </div>
 
     <!-- the why choose us starts here -->
 
@@ -474,7 +507,26 @@
  
 
  
-    
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll('.whyCards-1');
+
+      const revealCardsOnScroll = () => {
+          const windowHeight = window.innerHeight;
+          
+          cards.forEach(card => {
+              const cardTop = card.getBoundingClientRect().top;
+              
+              if (cardTop < windowHeight - 100) {  // Adjust offset for earlier triggering
+                  card.classList.add('show');
+              }
+          });
+      };
+
+      window.addEventListener('scroll', revealCardsOnScroll);
+      revealCardsOnScroll(); // Initial check in case some cards are already visible
+  });
+</script>  
 <script src="js/work.js"></script> 
 </body>
 </html>
