@@ -293,7 +293,7 @@ background-color:rgb(0, 22, 75);
 
 
 .header-image{
-    background-image:linear-gradient(to left, rgba(0,0,0,0.3),rgb(0, 44, 82,0.5)), url("pics/worker1.jpg");
+    background-image:linear-gradient(to left, rgba(0,0,0,0.3),rgb(0, 44, 82,0.5)),url("pics/worker1.jpg");
     height: 500px;
     background-size: cover;
     display: flex;
